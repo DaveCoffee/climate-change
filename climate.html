@@ -1,0 +1,136 @@
+<!-- The color palette I used here was from Coolors here is the link.
+https://coolors.co/75dddd-508991-172a3a-004346-09bc8a
+
+I hope anyone that views this like it!
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta name="description" content="Climate Change">
+  <meta name="keywords" content="Climate change,">
+  <meta name="author" content="David">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   <meta charset="utf-8">
+  <title>Climate Change</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body id="body" >
+  <h1 id="heading"> <a onclick='change_heading()'>Climate Change</a><img  id="earth" src="earth2.jpg" width="150"></h1>
+
+<!-- I just used a float right for the image in the stylesheet -->
+ 
+
+  <h3>Main causes of climate change:</h3>
+   <ul>
+      <li>Deforestation</li>
+      <li>Air Polution</li>
+      <li>Wild Fires</li>
+      <li>Water Shortage</li>
+    </ul>
+
+ <div><figure>
+     <img id="deforestation" src="deforestation-2.jpg" alt="a picture of trees cut down">
+      <h2>Deforestation</h2>
+
+
+      <p>Deforesation is the act of cutting down trees for human advancement.
+      This can also be linked with air polution too, cause as humans, we need oxygen
+      which trees release when they get carbon dioxide, but if too many trees get cut down, then all the carbon dioxide gets released. 
+      No trees, no oxygen! 
+    
+      It also distorys animals homes too, leaving them with no place to go, there is 
+      a report that says in 100 years we could use up all the trees within, 
+      only about 100 years.
+      </p>
+      </figure>
+
+  <div class="bg-color2">
+    <figure>
+  <img src="air_pollution_og.jpg" alt="">
+    <h2>Air Polution</h2>
+      <p>Air polution is when small particles of gases are in the air which are
+      dangerous for humans to breathe in. Like when a tree gets cut down to releases
+      carbon dioxide.</p>
+      </figure>
+  </div>
+  <div class="wildfire">
+    <figure>
+  <img src="wildfire.jpg" alt="">
+  <h2>Wildfires</h2>
+    <p>This is when forests catch on fire, mainly it's from lighting hitting
+    trees. It's about 60% that are naturally caused and the other 40% is by humans, through
+    cigarette butts or on purpuse, cause it's a faster way to than cutting down tress.
+    </p>
+     </figure>
+  </div>
+  <div class="water">
+     <aside>
+  <blockquote>
+    <img id="vand" src="vandana.jpg">
+	  <strong>Vandana Shiva</strong>
+    “Although two thirds of our planet is water,
+    we face an acute water shortage.
+    The water crisis is the most pervasive ,
+    most severe, and most invisible dimension of the
+    ecological devastation of the earth.” Water Wars:<br>
+    Fight to the Last Drop (South End Press, 2002) 
+  </blockquote>
+     </aside>
+    <figure>
+  <img src="water.jpg" alt="">
+    <h2>Water Shortage</h2>
+      <p>This is mainly when natrual disasters contanimate the water and increasing the
+      risk of cholera and typhoid to which children will get sick from.
+      </p>
+    </figure>
+      
+  </div>
+   
+
+
+  <div>
+  <h3>Conclusion</h3>
+    <p>It's so sad to see what humanity has done with the world, but we didn't know better. But now we do, sadly, it might already be too late. We just have to make sure we do our part, and <strong>protect</strong> the planet. If not for you, then for the kids of the next
+    generation.
+    </P>
+  </div>
+  <h2 id="header_map">Google Maps</h2>
+  <div id="googleMap" style="width:50%;height:200px;"></div>
+  <div id="useful-links">
+  <h2>Useful links</h2>
+      <li><a href=https://climate.nasa.gov/causes/ target="_blank">Causes of Climate Change</a></li>
+      <li><a href="https://teamtrees.org/" target="_blank">Team Trees</a></li>
+      <li><a href="https://www.change.org/" target="_blank">Change.org</a></li>
+      <li><a href="https://www.charitywater.org/uk" target="_blank"</a>Charity Water</li>
+      <li><a href="https://csdw.org/" target="_blank"</a>P&G Children's safe Drinking Water</li>
+
+  </div>
+ 
+      <a id="link" href="index.html">Quiz</a>
+      
+      
+      
+
+<script>
+//define the "myMap" function, this will be used by the API to set parameters and populate an element with a map:
+function myMap() {
+//set the center and zoom options and assign them to the mapProp variable. The API requires you to have a centre and zoom level for it to work.
+var mapProp= {
+  center:new google.maps.LatLng(-71.8500,70.0000),
+  zoom:2,
+};
+//To make a call to the API you need to create a variable which I've called "map". You pass the element that will contain the map and the properties variable.
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
+  </div>
+  </div>
+</body>
+
+</html>

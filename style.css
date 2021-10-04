@@ -1,0 +1,142 @@
+/*
+CSS created  2020.
+I have tried to get all of the styles in order that they appear on the webpage. 
+
+*/
+
+body {
+  background-color: #09BC8A;
+  width:800px;
+  margin: 0 auto;
+}
+
+
+
+#earth {
+
+  max-width:70%;
+  height: auto;
+  margin-left:150px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+h1 {
+  background-color:#508991;
+  color: white;
+  border-radius: 3px;
+  padding: 15px;
+  text-align: center;
+  font-family:verdana;
+}
+
+p {
+  letter-spacing: 1px;
+  font-size:17px;
+}
+
+
+div img {
+  margin-top:5px;
+	max-width:80%;
+	height: auto;
+	border-radius:10px;
+}
+
+
+#menu, #link {
+  background-color:#508991;
+  text-decoration:none;
+  width:1rem;
+  border-radius:5px;
+  padding:5px;
+  margin-top:10px;
+  color:white;
+
+}
+
+#useful-links {
+	list-style:none;
+  margin-bottom: 20px;
+}
+
+
+/* .bg-color {
+  background-color:#508991; I ended up not using these styles, but kept them anyways.
+  padding: 5px;
+} */
+
+/* .bg-color2 {
+  background-color:lightgrey;
+} */
+
+
+/* .wildfire {
+  background-color:#508991;
+} */
+
+/* .water {
+background-color: #6cb7d0;
+} */
+
+#vand {
+  border:3px solid #09BC8A;
+  width: 185px;
+  height: auto;
+  margin-left:15px;
+  
+}
+
+
+
+blockquote {
+  border:2px solid white;
+  
+  background-color: #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  width: 190px;
+  float: right;
+
+}
+
+article {
+	float:right;
+}
+
+
+
+#header_map{
+  text-align:right;
+}
+#googleMap {
+  float:right;
+  margin-bottom:150px;
+  border:1px solid red;
+}
+
+
+
+/* form styling for the quiz */
+
+#name {
+  width:15rem;
+
+}
+
+form {;
+  padding:10px;
+  
+}
+
+
+
+
+
+
+
