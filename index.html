@@ -20,21 +20,29 @@ I hope anyone that views this like it!
 </head>
 
 <body id="body" >
-  <h1 id="heading"> <a onclick='change_heading()'>Climate Change</a><img  id="earth" src="earth2.jpg" width="150"></h1>
+  <h1 id="heading"> <a>Climate Change</a><img  id="earth" src="earth2.jpg" width="150"></h1>
 
 <!-- I just used a float right for the image in the stylesheet -->
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#useful-links">Useful Links</a></li>
+    <li><a href="https://david-rigby-portfolio.netlify.app/">My Portfolio</a></li>
+  </ul>
+</nav>
  
 
   <h3>Main causes of climate change:</h3>
    <ul>
-      <li>Deforestation</li>
-      <li>Air Polution</li>
-      <li>Wild Fires</li>
-      <li>Water Shortage</li>
+      <li><a href="#deforestation">Deforestation</a></li>
+      <li><a href="#air_pol">Air Polution</a></li>
+      <li><a href="#wildfire">Wild Fires</a></li>
+      <li><a href="#water">Water Shortage</a></li>
     </ul>
 
  <div><figure>
-     <img id="deforestation" src="deforestation-2.jpg" alt="a picture of trees cut down">
+     <img id="deforestation" src="deforestation-2.jpg" alt="A picture of trees that have been cut down">
       <h2>Deforestation</h2>
 
 
@@ -51,7 +59,7 @@ I hope anyone that views this like it!
 
   <div class="bg-color2">
     <figure>
-  <img src="air_pollution_og.jpg" alt="">
+  <img id="air_pol" src="air_pollution_og.jpg" alt="Father and son photo watching pollution comming out from a factory">
     <h2>Air Polution</h2>
       <p>Air polution is when small particles of gases are in the air which are
       dangerous for humans to breathe in. Like when a tree gets cut down to releases
@@ -60,7 +68,7 @@ I hope anyone that views this like it!
   </div>
   <div class="wildfire">
     <figure>
-  <img src="wildfire.jpg" alt="">
+  <img id="wildfire" src="wildfire.jpg" alt="A picture of trees on fire">
   <h2>Wildfires</h2>
     <p>This is when forests catch on fire, mainly it's from lighting hitting
     trees. It's about 60% that are naturally caused and the other 40% is by humans, through
@@ -82,7 +90,7 @@ I hope anyone that views this like it!
   </blockquote>
      </aside>
     <figure>
-  <img src="water.jpg" alt="">
+  <img id="water" src="water.jpg" alt="">
     <h2>Water Shortage</h2>
       <p>This is mainly when natrual disasters contanimate the water and increasing the
       risk of cholera and typhoid to which children will get sick from.
@@ -131,6 +139,10 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 <script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
   </div>
   </div>
+
+
+
+
 </body>
 
 </html>
