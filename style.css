@@ -4,10 +4,23 @@ I have tried to get all of the styles in order that they appear on the webpage.
 
 */
 
+
+/* Global
+------------*/
+
 body {
   background-color: #09bc8a;
   width: 800px;
   margin: 0 auto;
+}
+
+h1 {
+  background-color: #508991;
+  color: white;
+  border-radius: 3px;
+  padding: 15px;
+  text-align: center;
+  font-family: verdana;
 }
 
 nav ul {
@@ -23,23 +36,27 @@ nav a {
   margin-right: 1em;
 }
 
-#earth {
+/* header logo */
+#earth  {
+  background-image: url(earth-logo.png);
   max-width: 70%;
   height: auto;
   margin-left: 150px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 50px;
   margin-bottom: 5px;
 }
 
-h1 {
-  background-color: #508991;
-  color: white;
-  border-radius: 3px;
-  padding: 15px;
-  text-align: center;
-  font-family: verdana;
+.sub-nav li {
+  list-style: none;
+
 }
+.sub-nav a {
+  text-decoration: none;
+}
+
+
+
 
 p {
   letter-spacing: 1px;
@@ -73,22 +90,7 @@ div img {
   text-decoration: none;
 }
 
-/* .bg-color {
-  background-color:#508991; I ended up not using these styles, but kept them anyways.
-  padding: 5px;
-} */
 
-/* .bg-color2 {
-  background-color:lightgrey;
-} */
-
-/* .wildfire {
-  background-color:#508991;
-} */
-
-/* .water {
-background-color: #6cb7d0;
-} */
 
 #vand {
   border: 3px solid #09bc8a;
@@ -129,3 +131,20 @@ article {
 form {
   padding: 10px;
 }
+
+@media screen and (max-width: 500px) {
+
+ .wrapper {
+   width: 50%;
+ }
+ aside {
+   display: inline;
+ }
+ blockquote {
+  width: 200px;
+  position: relative;
+  right: 100px;
+ }
+  
+}
+
