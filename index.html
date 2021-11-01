@@ -18,7 +18,7 @@ I hope anyone that views this like it!
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="script.js"></script>
 </head>
-
+<div class="wrapper">
 <body id="body" >
   <h1 id="heading"> <a>Climate Change</a><img  id="earth" src="earth2.jpg" width="150"></h1>
 
@@ -34,7 +34,7 @@ I hope anyone that views this like it!
  
 
   <h3>Main causes of climate change:</h3>
-   <ul>
+   <ul class="sub-nav">
       <li><a href="#deforestation">Deforestation</a></li>
       <li><a href="#air_pol">Air Polution</a></li>
       <li><a href="#wildfire">Wild Fires</a></li>
@@ -109,10 +109,34 @@ I hope anyone that views this like it!
   </div>
   <h2 id="header_map">Google Maps</h2>
   <div id="googleMap" style="width:50%;height:200px;"></div>
+
+
+  <script>
+    //define the "myMap" function, this will be used by the API to set parameters and populate an element with a map:
+    function myMap() {
+    //set the center and zoom options and assign them to the mapProp variable. The API requires you to have a centre and zoom level for it to work.
+    var mapProp= {
+      center:new google.maps.LatLng(-71.8500,70.0000),
+      zoom:2,
+    };
+    //To make a call to the API you need to create a variable which I've called "map". You pass the element that will contain the map and the properties variable.
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
+      </div>
+
+
+
+
+
+
+
   <div id="useful-links">
   <h2>Useful links</h2>
       <li><a href=https://climate.nasa.gov/causes/ target="_blank">Causes of Climate Change</a></li>
       <li><a href="https://teamtrees.org/" target="_blank">Team Trees</a></li>
+      <li><a href="https://teamseas.org/" target="_blank">Team Seas</a></li>
       <li><a href="https://www.change.org/" target="_blank">Change.org</a></li>
       <li><a href="https://www.charitywater.org/uk" target="_blank"</a>Charity Water</li>
       <li><a href="https://csdw.org/" target="_blank"</a>P&G Children's safe Drinking Water</li>
@@ -124,25 +148,13 @@ I hope anyone that views this like it!
       
       
 
-<script>
-//define the "myMap" function, this will be used by the API to set parameters and populate an element with a map:
-function myMap() {
-//set the center and zoom options and assign them to the mapProp variable. The API requires you to have a centre and zoom level for it to work.
-var mapProp= {
-  center:new google.maps.LatLng(-71.8500,70.0000),
-  zoom:2,
-};
-//To make a call to the API you need to create a variable which I've called "map". You pass the element that will contain the map and the properties variable.
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
-  </div>
+
   </div>
 
 
 
 
 </body>
+</div>
 
 </html>
